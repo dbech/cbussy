@@ -23,7 +23,7 @@ npx skills add /absolute/path/to/cbussy -s cbussy
 
 ```
 skills/cbussy/SKILL.md
-skills/cbussy/references/     # topic notes + CORPUS.md + manual .txt extracts
+skills/cbussy/references/
 skills/cbussy/agents/openai.yaml
 ```
 
