@@ -1,0 +1,608 @@
+SpaceLogic C-Bus Controllers
+
+
+
+
+Apple HomeKit Plugin
+v1.0 May 2026
+
+
+
+
+se.com
+
+
+
+
+         se.com
+                       Publi
+                       c
+Aim of this Document
+The aim of this document is to highlight recommended steps & tips on:
+
+• Downloading & Installing the controller plugin for Apple HomeKit
+• Establishing integration between     C -Bus Controller & Apple HomeKit
+• Transferring objects from    C -Bus Controller to Apple HomeKit
+
+
+To help fully understand the contents of this document, you must have a solid
+understanding of the following pre -requisite knowledge:
+
+• Programming & Using the       C -Bus Controller’s internal web server
+• Understand how objects work in the          C -Bus Controller
+• Understand how to download & install plugins in a         C -Bus Controller, a Quick
+  Start Guide on this is   available here .
+• Understand how to establish a connection between a              C -Bus Controller & the
+  Schneider Electric Cloud Service
+
+
+
+
+                                                                   1
+                                              Gener
+                                              al
+HomeKit Plugin
+Once the HomeKit Plugin is installed, it will appear as a dedicated button on the
+Controller’s home page:
+
+
+
+
+The communication diagram between the HomeKit Plugin, HomeKit smart phone
+app & C -Bus Controller is provided below:
+
+
+
+
+         Internet
+        Network
+
+
+                    Ethernet
+
+
+
+
+   To establish the initial connection between the C -Bus Controller &
+   HomeKit, both the controller & smart phone need to be on the same
+   internet supported Wi -Fi Network
+
+
+                                                               2
+                                           Gener
+                                           al
+HomeKit Structure
+Before adding the C -Bus Controller & its objects into Apple HomeKit, it is highly
+recommended to take note of the structure & hierarchy used in Apple HomeKit.
+
+The structure in HomeKit can be represented by the following diagram:
+
+
+      Home
+
+
+           Zones
+         (optional)
+
+
+              Accessories
+
+
+                      Services
+
+
+                        Characteristics
+
+
+
+
+  Accessories
+  Apple HomeKit uses the term accessories to describe different controls,
+  separated into the following categories:
+
+           Lights                                      Blinds / Shades
+
+
+
+            Outlets / Switches                         Fans
+
+
+           Thermostats                                 Doors / Garage Doors
+
+
+
+            Locks                                      Sensors
+
+
+            Cameras / Doorbells                        Bridge
+
+
+
+
+                                                                3
+                                          Gener
+                                          al
+HomeKit Structure
+
+         Bridge
+
+  In HomeKit, a bridge allows a non -HomeKit device to be connected to the
+  HomeKit app; in this example, the C -Bus Controller is added as a Bridge
+
+
+
+
+         Lights
+
+  Lights are a dedicated category in HomeKit, this is important to
+  remember as it will influence how devices will be named when they are
+  added into the app
+
+
+
+
+ Naming Convention
+ Any device that is added in HomeKit is assigned a name, representing how it
+ is displayed in the user interface.
+
+ The following is a recommended naming format that can be used when
+ adding devices:
+
+        [Room / Location] + [Descriptor / Function]
+
+ Examples when adding lights :
+  • Kitchen bench → lights over kitchen bench
+  • Lounge Couches or Couches → lights over the couches in the lounge
+
+ This naming convention is used to help optimise how devices are displayed
+ in the HomeKit app and how the end user interacts when controlling the
+ devices via Siri .
+
+
+
+
+                                                            4
+                                         Gener
+                                         al
+C-Bus Controller & HomeKit
+The following steps & tips will help guide you to setup a   C -Bus Controller to
+operate with the Apple HomeKit smart phone app.
+
+
+Consider the following C -Bus Controller Objects:
+
+
+
+
+Step 1
+Navigate to the C -Bus Controller Start Page click    HomeKit :
+
+
+
+
+                                                             5
+                                           Gener
+                                           al
+C-Bus Controller & HomeKit
+Step 2
+The HomeKit page will be displayed
+
+
+
+
+   To establish the initial connection between the C -Bus Controller &
+   HomeKit, both the controller & smart phone need to be on the same internet
+   supported Wi -Fi Network
+
+
+
+
+Step 3
+You can click Add Device or Add Devices (Bulk)      to select devices that will be
+added to Apple HomeKit . This example will add the following objects:
+
+
+
+
+                                                             6
+                                         Gener
+                                         al
+C-Bus Controller & HomeKit
+Step 4
+The Add Devices (Bulk)     window appears, allowing you to select which objects
+will be added:
+
+
+
+
+Step 5
+The HomeKit Name      for the selected objects can also be adjusted to meet the
+needs of the end user; however, for this example the object names will be
+changed later in the HomeKit app
+
+
+                                                             7
+                                          Gener
+                                          al
+C-Bus Controller & HomeKit
+Step 6
+The Type of Control * of each object can also be determined, based on how it
+will be used in the HomeKit app:
+
+
+
+
+   In this example, the selected objects have been set to    Light Dimmer & Light
+   Switch control types. This means that they will be categorised as   Lights
+   when they are added to the HomeKit app.
+
+
+
+                                                            8
+                                         Gener
+                                         al
+C-Bus Controller & HomeKit
+Step 7
+Once all objects have been selected, click           Save to HomeKit :
+
+
+
+Step 8
+Once all objects have been added, click       Apply Changes       at the top of the page:
+
+
+
+
+Step 9
+Click QR Code    to generate a QR Code         to add the controller & objects to HomeKit:
+
+
+
+
+                                                                  9
+                                             Gener
+                                             al
+C-Bus Controller & HomeKit
+Step 10
+Ensure that the smart phone is connected to the same internet supported
+network as the C -Bus Controller:
+
+
+
+
+Step 11 – End User
+Open HomeKit and create a new Home :
+
+
+
+   Ensure that the owner of the Home
+   (the original creator ) does the initial
+   adding of the C -Bus Controller to the app
+
+
+
+
+                                                            10
+                                         Gener
+                                         al
+C-Bus Controller & HomeKit
+Step 12
+Tap Add Accessory      and scan the QR Code generated by the controller
+
+
+
+
+Tap Add to Home to add the controller as a bridge, a notification may appear
+highlighting that the accessory is   uncertified ; however, you can tap Add Anyway
+
+
+
+
+                                                             11
+                                           Gener
+                                           al
+C-Bus Controller & HomeKit
+Step 13
+Select the location & set the name of the Bridge (Controller):
+
+
+
+
+Once the controller is added as a    Bridge , the selected objects from   Step 6 will be
+added:
+
+
+
+
+                                                                 12
+                                           Gener
+                                           al
+C-Bus Controller & HomeKit
+Step 14
+For each added device, the    Device Name           and location can be configured:
+
+
+
+
+Devices will be added using the following       Location and Name:
+
+
+          Object                  Location                        Name
+
+          DIM01.01 Living         Lounge Room                     Couches
+
+
+          DIM01.02 Dining         Dining Room                     Table
+
+
+          DIM01.03 Family         Family Room                     TV
+
+
+
+
+  It was highlighted earlier that the added devices will be added using a
+  naming convention to help optimise how they are displayed in the HomeKit
+  app and its interaction when controlling the devices via     Siri .
+
+  The Location of Family Room       is a newly created room.
+
+
+
+                                                                   13
+                                            Gener
+                                            al
+C-Bus Controller & HomeKit
+Step 15
+For this example, the added devices appears as follows:
+
+
+
+
+The devices are now displayed according to their       Location and using names
+based on their functionality; additionally, they are categorised as   Lights:
+
+
+
+
+  Object               Location         Name
+
+  DIM01.01 Living      Lounge Room      Couches
+
+
+  DIM01.02 Dining      Dining Room      Table
+
+
+  DIM01.03 Family      Family Room      TV
+
+
+
+
+                                                                14
+                                             Gener
+                                             al
+C-Bus Controller & HomeKit
+Step 15
+For this example, the added devices appears as follows:
+
+
+
+
+The devices are now displayed according to their       Location and using names
+based on their functionality; additionally, they are categorised as   Lights:
+
+
+
+
+  Object               Location         Name
+
+  LED01                Entrance         Porch
+
+
+  LED Strip            Family Room      Couches
+
+
+  LED02                Hallway          Entry
+
+
+
+
+                                                                14
+                                            Gener
+                                            al
+C-Bus Controller & HomeKit
+Step 16
+Each device has a dedicated control page, with functionality matching the type
+defined in the C -Bus Controller; for example, the Living Room     → Light Dimmer:
+
+
+
+
+                                                              15
+                                          Gener
+                                          al
+C-Bus Controller & HomeKit
+It was highlighted earlier that to establish an initial connection between
+the C -Bus Controller & HomeKit, both the controller & smart phone need
+to be on the same internet supported Wi -Fi Network
+
+
+
+
+   Once C -Bus objects have been added as devices in the HomeKit app, an
+   internet connection is not required for them to be controlled using the app.
+
+   This is because commands between the smart phone & controller are
+   achieved through the Wi-Fi protocol & not the internet connection.
+
+   As long as the smart phone & C -Bus Controller are on the same Wi         -Fi
+   Network , manual control using HomeKit is still possible.
+
+
+
+
+                                                            16
+                                         Gener
+                                         al
+HomeKit & Siri
+Voice Control can be achieved using Siri (if it is enabled on any compatible Apple
+device) . The phrases used to control the       C -Bus objects through Siri are provided
+below:
+
+
+
+
+      “Hey Siri, turn on Dining Room Table”
+
+
+
+
+      “Hey Siri, turn the TV lights in the Family     Room on”
+
+
+
+
+      “Hey Siri, turn off the Couches”
+
+
+
+
+                                                                  17
+                                             Gener
+                                             al
+HomeKit & Features
+The Apple HomeKit app supports additional features such as    remote control ,
+automations , and granting access , an Apple TV (4 th generation or later ) or
+Apple HomePod is required. This is highlighted by tapping the   Add Icon on the
+Home Page and the Automations Page :
+
+
+
+
+Once a HomePod is added to the home, these additional   features (such as
+remote control & access to your home) become available:
+
+
+
+
+                                                         18
+                                       Gener
+                                       al
+HomeKit & Scenes
+Scenes are a native feature of Apple HomeKit and can be created with or
+without an Apple HomePod / TV:
+
+
+
+
+An example Scene of turning all the   C -Bus Objects off as you leave home is
+shown below:
+
+
+
+
+                                                             19
+                                         Gener
+                                         al
+HomeKit & Scenes
+
+ There is a key difference between the capabilities of the HomeKit app & the
+ visualisations achieved in a C -Bus Controller.
+
+
+
+
+                                 C -Bus Controller – Custom Visualisation
+                                 The custom visualisation in the C -Bus
+                                 Controllers can present multiple scenes via
+                                 a single button if all scenes share the same
+                                 Trigger Group:
+
+                                 1 Dedicated Button → Multiple Scenes
+
+                                 This feature allows for multiple icons, each
+                                 housing multiple scenes to be placed on the
+                                 same Page .
+
+
+
+
+                                 Apple HomeKit app
+                                 Each scene is represented using a dedicated
+                                 button:
+
+                                 1 Dedicated Icon Button    → 1 Scene
+
+                                 HomeKit does not support the ability for
+                                 multiple scenes to be selected from a
+                                 dedicated button.
+
+                                 A workaround is creating a separate Room
+                                 in the app and adding appropriate scenes to
+                                 that Room
+
+
+
+
+                                                           20
+                                        Gener
+                                        al
+HomeKit & Automations
+If an Apple HomePod    is added into HomeKit, the native automations feature in
+the app becomes available:
+
+
+
+
+An example of an automation using the added      C -Bus devices is shown below,
+turning the Table & Couch Lights On when        the first person arrives home:
+
+
+
+
+                                                              21
+                                        Gener
+                                        al
+Disclaimer
+© Copyright Schneider Electric (Australia) Pty Ltd and Schneider Electric (New
+Zealand) Ltd, 2026. All rights reserved. This material is copyright under
+Australian, New Zealand and international laws. Except as permitted under the
+relevant law, no part of this work may be reproduced by any process without
+prior written permission of and acknowledgement to Schneider Electric
+(Australia) Pty Ltd and Schneider Electric (New Zealand) Ltd.
+
+The materials presented in this document are distributed by Schneider Electric
+(Australia) Pty Ltd and Schneider Electric (New Zealand) Ltd     as an information
+source only.
+
+The information and data within this document is subject to change without
+notice.Schneider Electric (Australia) Pty Ltd and Schneider Electric (New
+Zealand) Ltd makes no claims, representations, or warranties about the
+completeness of any information contained in this document.
+
+Schneider Electric (Australia) Pty Ltd and Schneider Electric (New Zealand)
+Ltd disclaim all responsibility and all liability to you or any other person for any
+loss, injury, damage, costs, expenses or compensation of any kind arising
+directly or indirectly in connection with any act or omission of Schneider Electric
+(Australia) Pty Ltd and Schneider Electric (New Zealand) Ltd           in relation to this
+document.
+
+All brand names, trademarks, and registered trademarks are the property of
+their respective owners.
+
+This content has ended.
+
+
+
+
+                                                                   22
+                                              Gener
+                                              al
+Schneider Electric (Australia) Pty Ltd   Schneider Electric (New Zealand) Ltd
+Head Office                              L2, 60 Highbrook Drive, East Tamaki, Manukau 2013
+2 Banfield Road                          PO Box 259370, Botany, Manukau 2163
+Macquarie Park
+NSW 2113
+
+                                            Gener
+                                            al
+

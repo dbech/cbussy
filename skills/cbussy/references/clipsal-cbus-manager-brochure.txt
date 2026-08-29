@@ -1,0 +1,251 @@
+SpaceLogic C-Bus Controllers
+Clipsal C-Bus Manager
+v1.0 May 2025
+
+
+
+
+                        General
+Aim of this Document
+
+The aim of this document is to highlight the Clipsal C-Bus Manager app supported in the:
+
+• SpaceLogic C-Bus Automation Controller (5500NAC2)
+• SpaceLogic C-Bus Application Controller (5500AC2)
+
+The contents of this document have been developed using and are as follows:
+
+• 5500NAC2 and 5500AC2 firmware v2.1.0
+
+1. Applications
+
+2. Cloud Connection
+
+3. Pair Controller
+4. Clipsal C-Bus Manager
+
+
+
+
+                                                                  Public
+Application: Smart Phone
+The Clipsal C-Bus Manager application can be downloaded using the following links:
+                      Android                                                        iOS
+
+
+
+
+                                  Cloud        Pair        Clipsal C-Bus
+                Application
+                                Connection   Controller      Manager
+                                                                  Public
+Application: Controller
+For the purposes of this document, the controller needs to be connected to an internet supported network; with all
+additional apps installed:
+• Manager         • IoT 3rd Party API
+• Management      • Cloud connector
+
+
+
+
+                                  Cloud         Pair        Clipsal C-Bus
+                 Application
+                                Connection    Controller      Manager
+                                                                   Public
+Cloud Connection
+
+The following steps will outline how to pair the controller with the Schneider Electric Cloud Service:
+
+1. Click the Cloud Connector app and enable the Enable Cloud Connector checkbox.
+2. Click    at the top right of the page to navigate back to the Home page.
+
+
+
+
+                                   Cloud           Pair         Clipsal C-Bus                             Final
+                  Application
+                                 Connection      Controller       Manager
+                                                                       Public                            Project
+Cloud Connection
+
+3. Click the API app and enable all three checkboxes.
+4. Click   at the top right of the page to navigate back to the Home page.
+
+
+
+
+                                  Cloud          Pair        Clipsal C-Bus
+                 Application
+                                Connection     Controller      Manager
+                                                                    Public
+Cloud Connection
+
+5. Click the Management app.
+6. Click the Cloud Access tab followed by Login to cloud.
+
+
+
+
+                                 Cloud          Pair        Clipsal C-Bus
+                 Application
+                               Connection     Controller      Manager
+                                                                   Public
+Cloud Connection
+
+7. The Schneider Electric Cloud Services web page will be opened in a new browser window.
+8. For this document, click Register to register an account with the Schneider Electric Cloud Service.
+9. After completing the registration information, an email verification will be sent to complete the registration process.
+
+
+
+
+                                    Cloud           Pair         Clipsal C-Bus
+                  Application
+                                  Connection      Controller       Manager
+                                                                        Public
+Cloud Connection
+
+10. In the confirmation email, click Confirm, opening the login page of your controller.
+11. Login to the controller as the administrator.
+12. You will be automatically re-directed to the Management page – Cloud Access tab.
+
+
+
+
+                                    Cloud             Pair       Clipsal C-Bus
+                  Application
+                                  Connection        Controller     Manager
+                                                                        Public
+Pair Controller
+
+13. Reboot the controller.
+14. Once the controller has successfully rebooted, refresh the web browser*.
+15. Navigate to the Management page – Cloud Access tab, and click Pair Controller.
+
+
+
+
+*Pairing is possible only in the first five minutes after the device boots up. Restart your device (using a physical restart button) if needed.
+
+
+                                    Cloud           Pair         Clipsal C-Bus
+                  Application
+                                  Connection      Controller       Manager
+                                                                        Public
+Pair Controller
+
+16. The Grant access to controller dialog box appears.
+17. Enter in the appropriate information and click Pair
+18. The controller will be paired with the Schneider Electric Cloud Service, highlighted by the Controller paired status.
+
+
+
+
+                                   Cloud           Pair        Clipsal C-Bus
+                  Application
+                                 Connection      Controller      Manager
+                                                                      Public
+Clipsal C-Bus Manager
+Once the controller has been successfully paired to the Schneider Electric Cloud Service through the Management app, it can be
+accessed via the Clipsal C-Bus Manager smart phone application:
+
+1. Open the Clipsal C-Bus Manager application and login to the same account that was used in the controller (Page 8) .
+
+
+
+
+                                 Cloud           Pair        Clipsal C-Bus
+                 Application
+                               Connection      Controller      Manager
+                                                                    Public
+Clipsal C-Bus Manager
+The visual structure / representation that was created using Manager Config in the controller is now represented in the Clipsal C-Bus
+Manager application:
+
+
+
+
+                                  Cloud           Pair        Clipsal C-Bus
+                 Application
+                                Connection      Controller      Manager
+                                                                     Public
+Clipsal C-Bus Manager
+The visual structure / representation that was created using Manager Config in the controller is now represented in the Clipsal C-Bus
+Manager application:
+
+
+
+
+                                                             Floors &
+                                                             Rooms
+
+
+
+
+                                  Cloud           Pair           Clipsal C-Bus
+                 Application
+                                Connection      Controller         Manager
+                                                                        Public
+Clipsal C-Bus Manager
+The visual structure / representation that was created using Manager Config in the controller is now represented in the Clipsal C-Bus
+Manager application:
+
+
+
+
+                                                             Widgets
+
+
+
+
+                                  Cloud           Pair           Clipsal C-Bus
+                 Application
+                                Connection      Controller         Manager
+                                                                        Public
+Clipsal C-Bus Manager
+Each widget (except scenes) has a dedicated control screen, giving you the capability to control the load:
+
+
+
+
+                                  Cloud           Pair        Clipsal C-Bus
+                 Application
+                                Connection      Controller      Manager
+                                                                     Public
+Clipsal C-Bus Manager
+You can also set the widget as a Favourite using its dedicated control screen, it will then appear on the Favourite screen:
+
+
+
+
+                                  Cloud           Pair         Clipsal C-Bus
+                 Application
+                                Connection      Controller       Manager
+                                                                      Public
+Disclaimer
+© Copyright Schneider Electric (Australia) Pty Ltd and Schneider Electric (New Zealand) Ltd, 2025. All rights reserved. This material is
+copyright under Australian, New Zealand and international laws. Except as permitted under the relevant law, no part of this work may be
+reproduced by any process without prior written permission of and acknowledgement to Schneider Electric (Australia) Pty Ltd and
+Schneider Electric (New Zealand) Ltd.
+
+The materials presented in this document are distributed by Schneider Electric (Australia) Pty Ltd and Schneider Electric (New Zealand)
+Ltd as an information source only.
+
+The information and data within this document is subject to change without notice.Schneider Electric (Australia) Pty Ltd and Schneider
+Electric (New Zealand) Ltd makes no claims, representations, or warranties about the completeness of any information contained in this
+document.
+
+Schneider Electric (Australia) Pty Ltd and Schneider Electric (New Zealand) Ltd disclaim all responsibility and all liability to you or any
+other person for any loss, injury, damage, costs, expenses or compensation of any kind arising directly or indirectly in connection with any
+act or omission of Schneider Electric (Australia) Pty Ltd and Schneider Electric (New Zealand) Ltd in relation to this document.
+
+All brand names, trademarks, and registered trademarks are the property of their respective owners.
+
+This content has ended.
+
+
+
+
+                                                                     Public
+Public
+
