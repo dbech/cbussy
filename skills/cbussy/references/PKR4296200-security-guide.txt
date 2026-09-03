@@ -1,39 +1,13 @@
 Securing SpaceLogic C-Bus Automation
 Controllers
 
-
 Configuration Guide
-
 
 Generation of SSL Certificates for secure authenticated access to C-Bus Automation
 Controllers, for Windows PC, iOS and Android Devices.
 
-
 Release date 06/2023
 
-
-
-
-www.se.com/contact
-Legal Information
-             The Schneider Electric brand and any trademarks of Schneider Electric SE and its
-             subsidiaries referred to in this guide are the property of Schneider Electric SE or its
-             subsidiaries. All other brands may be trademarks of their respective owners.
-             This guide and its content are protected under applicable copyright laws and
-             furnished for informational use only. No part of this guide may be reproduced or
-             transmitted in any form or by any means (electronic, mechanical, photocopying,
-             recording, or otherwise), for any purpose, without the prior written permission of
-             Schneider Electric.
-             Schneider Electric does not grant any right or license for commercial use of the guide
-             or its content, except for a non-exclusive and personal license to consult it on an "as
-             is" basis. Schneider Electric products and equipment should be installed, operated,
-             serviced, and maintained only by qualified personnel.
-             As standards, specifications, and designs change from time to time, information
-             contained in this guide may be subject to change without notice.
-             To the extent permitted by applicable law, no responsibility or liability is assumed by
-             Schneider Electric and its subsidiaries for any errors or omissions in the informational
-             content of this material or consequences arising out of or resulting from the use of the
-             information contained herein.
 Table of Contents
              Safety information .......................................................................................4
                   Note ..........................................................................................................5
@@ -55,13 +29,8 @@ www.se.com/contact
                      Defining non-default ports for HTTPS connections ................................23
                        Setting HTTPS mode as default connection ..........................................24
 
-
-
-
 Ver 1.0                                                                                                                         3
                                                                                         Safety information
-
-
 Safety information
 Important information
                    Read these instructions carefully and look at the equipment to become familiar
@@ -761,18 +730,6 @@ Setting HTTPS mode as default connection
 
 
 Ver 1.0                                                                                                25
-Schneider Electric Industries SAS
-If you have technical questions, please contact the Customer Care
-Centre in your country.
-
-
-
-www.se.com/contact
-
-As standards, specifications, and design change from time to time,
-please ask for confirmation of the information given in this publication.
-
-
-© Schneider Electric. All rights reserved.
+
 PKR4296200–00
 
