@@ -7,63 +7,11 @@ Application Controller. The software programming interface is embedded in the Co
 requires a web browser. Pre‑programming and configuration cannot be performed without a
 Controller product.
 
-
 06/2026
-
-
 
 Firmware version 2.5.0
 
-
-
-
 5500NAC2                                            5500AC2
-
-
-
-
-www.se.com
-                         Legal information
-                         The Schneider Electric brand and all registered trademarks of Schneider
-                         Electric Industries SAS referred to in this manual are the sole property of
-                         Schneider Electric SA and its subsidiaries. They may not be used without the
-                         written approval of the owner. This manual and all its content are protected in
-                         accordance with the laws on copyright for texts, drawings and models, as well
-                         as in accordance with the law on trademarks. You agree not to duplicate the
-                         manual, in whole or in part, on media of any kind, without the written approval
-                         of Schneider Electric, other than for personal, non-commercial use as defined
-                         by the code of law. Furthermore, you agree not to create any hyperlinks to this
-                         manual or its contents. Schneider Electric does not grant the right or permission
-                         to use the manual or its content for personal and non-commercial use, with
-                         the sole exception of the non-exclusive right to view the current version of
-                         the manual and its content, at the viewer’s own risk. All other rights reserved.
-                         Electrical equipment must be installed, operated, maintained and repaired
-                         by qualified personnel only. Schneider Electric accepts no liability for the
-                         consequences of using this material.
-                         This Schneider Electric product is provided with certain open source software
-                         components (collectively, “OSS”) developed by third parties. The OSS is
-                         licensed in accordance with the OSS license terms set forth on page 252.
-
-
-
-
-                         Trademarks
-                         •   Linux® is the registered trademark of the Linus Torvalds in the U.S. and other
-                             countries.
-                         •   iTunes™ is a registered or unregistered trademark of the Apple Inc. in the
-                             USA and/or other countries.
-                         •   Google Chrome™ and Google Play™ are trademarks or registered or
-                             unregistered trademarks of the Google Inc. in the USA and/or other
-                             countries.
-                         •   Firefox® is a trademark or registered trademark of the Mozilla Corporation in
-                             the USA and/or other countries.
-                         •   Microsoft Windows® is a trademark or registered trademark of the Microsoft
-                             Corporation in the USA and/or other countries.
-                         •   Mac OS X® and Safari® are trademarks or registered trademarks of Apple
-                             Corporation in the USA and/or other countries.
-
-
-
 
 2 | 5500NAC2 & 5500AC2
                          Warnings
@@ -11845,18 +11793,6 @@ www.se.com
                                 other projects or from the open internet. Every line of code can be traced back to its original author,
                                 and all of those authors have public domain dedications on file. So the SQLite code base is clean and
                                 is uncontaminated with licensed code from other projects.
-
-
-
-
-Schneider Electric Industries SAS
-If you have technical questions, please contact the Customer Care Centre in your country.
-www.se.com/contact
-
-© 2026 Schneider Electric, all rights reserved
-
-
-JYT9535100_10
 
 277 | 5500NAC2 & 5500AC2
 
