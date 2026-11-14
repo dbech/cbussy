@@ -33,4 +33,4 @@ Manual extracts travel inside the skill folder, so a receiving agent can open th
 
 The skill file, topic notes and agent config are MIT licensed. See [LICENSE](LICENSE).
 
-The manual extracts under `skills/cbussy/references/` are Schneider Electric's text. They are included for reference, they stay Schneider Electric's copyright, and the MIT licence does not cover them.
+The `.txt` manual extracts under `skills/cbussy/references/` are Schneider Electric's text. They are included for reference, they stay Schneider Electric's copyright, and the MIT licence does not cover them.
