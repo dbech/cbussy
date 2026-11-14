@@ -28,3 +28,9 @@ skills/cbussy/agents/openai.yaml
 ```
 
 Manual extracts travel inside the skill folder, so a receiving agent can open them after install. One copy.
+
+## Licence
+
+The skill file, topic notes and agent config are MIT licensed. See [LICENSE](LICENSE).
+
+The `.txt` manual extracts under `skills/cbussy/references/` are Schneider Electric's text. They are included for reference, they stay Schneider Electric's copyright, and the MIT licence does not cover them.
